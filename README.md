@@ -1,6 +1,5 @@
-![rps game](rps_01.jpg "rps game")
 
-<img scr="image/rps_01.jpg" alt="rps game">
+![rps game](rps_01.jpg "rps game")
 
 # Rock Paper Scissors Game with Python!
 
