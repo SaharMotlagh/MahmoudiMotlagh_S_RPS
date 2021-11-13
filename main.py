@@ -25,10 +25,10 @@ while player is False:
     print("player chose: " + player)
     print("computer chose: " + computer)
 
+    # invoke the function here
+
     print("player Lives: " + str(playerLives))
     print("computer Lives: " + str(computerLives))
-
-    #invoke the function here
 
     if playerLives == 0:
         print("^-^====^-^====^-^====^-^====^-^====^-^")
