@@ -1,4 +1,5 @@
 from random import randint
+from gameComponents import winlose
 
 # save the player as a variable called player
 # the value of player will be one of three choices to type (input)
@@ -13,25 +14,6 @@ choices = ["rock", "paper", "scissors"]
 # add player and computer lives
 playerLives = 2
 computerLives = 2
-
-# define a win/lose function and invoke it in our gaame loop when lives run out (player or computer)
-
-def winorlose(status):
-    print("You " + status + "! would you like to play again?")
-    choice = input(" Y / N ")
-
-    global playerLives
-    global computerLives
-    global player
-
-    if choice == "n":
-        print("See you soon!")
-        exit()
-    else:
-        #reset and restart the game 
-         playerLives = 2
-         computerLives = 2
-         player = False
             
 # create an infinite loop (for now) so that we can keep playing 
 
@@ -74,10 +56,10 @@ while player is False:
 
     if playerLives == 0:
         # call the winorlose function here
-        winorlose("lose")
+        winlose.winorlose("lose")
         
     elif computerLives == 0:
         # call the winorlose function here  
-        winorlose("won")   
+        winlose.winorlose("won")   
         
     player = False
