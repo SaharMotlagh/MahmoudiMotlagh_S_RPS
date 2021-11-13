@@ -7,7 +7,7 @@ def winorlose(status):
     global player
 
     if choice == "n":
-        print("See you soon!")
+        print("============See you soon!============")
         exit()
     else:
         #reset and restart the game 
