@@ -1,5 +1,6 @@
 from random import randint
 from gameComponents import winlose
+from gameComponents import comparisonCode
 
 # save the player as a variable called player
 # the value of player will be one of three choices to type (input)
@@ -23,47 +24,6 @@ while player is False:
 
     print("player chose: " + player)
     print("computer chose: " + computer)
-
-    if computer == player:
-        print("+++++++++++++++++++++++++++++++++++")
-        print("tie! try again")
-        print("+++++++++++++++++++++++++++++++++++")
-
-    elif player == "rock":
-        if computer == "paper":
-            print("^-^====^-^====^-^====^-^====^-^====^-^")
-            print("you lose!")
-            ("^-^====^-^====^-^====^-^====^-^====^-^")
-            playerLives = playerLives - 1
-        else:
-            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
-            print("you win!")
-            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
-            computerLives = computerLives - 1
-
-    elif player == "paper":
-        if computer == "scissors":
-            print("^-^====^-^====^-^====^-^====^-^====^-^")
-            print("you lose!")
-            ("^-^====^-^====^-^====^-^====^-^====^-^")
-            playerLives = playerLives - 1
-        else:
-            print("*-*====*-*====*-*====*-*====*-*====*-*")
-            print("you win!")
-            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
-            computerLives = computerLives - 1
-
-    elif player == "scissors":
-        if computer == "rock":
-            print("^-^====^-^====^-^====^-^====^-^====^-^")
-            print("you lose!")
-            ("^-^====^-^====^-^====^-^====^-^====^-^")
-            playerLives = playerLives - 1
-        else:
-            print("*-*====*-*====*-*====*-*====*-*====*-*")
-            print("you win!")
-            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
-            computerLives = computerLives - 1
 
     print("player Lives: " + str(playerLives))
     print("computer Lives: " + str(computerLives))

@@ -1,3 +1,6 @@
+from gameComponents import winlose
+
+
 def winorlose(status):
     print("You " + status + "! would you like to play again?")
     choice = input(" Y / N ")
