@@ -25,41 +25,59 @@ while player is False:
     print("computer chose: " + computer)
 
     if computer == player:
+        print("+++++++++++++++++++++++++++++++++++")
         print("tie! try again")
+        print("+++++++++++++++++++++++++++++++++++")
 
     elif player == "rock":
         if computer == "paper":
+            print("^-^====^-^====^-^====^-^====^-^====^-^")
             print("you lose!")
+            ("^-^====^-^====^-^====^-^====^-^====^-^")
             playerLives = playerLives - 1
         else:
+            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
             print("you win!")
+            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
             computerLives = computerLives - 1
 
     elif player == "paper":
         if computer == "scissors":
+            print("^-^====^-^====^-^====^-^====^-^====^-^")
             print("you lose!")
+            ("^-^====^-^====^-^====^-^====^-^====^-^")
             playerLives = playerLives - 1
         else:
+            print("*-*====*-*====*-*====*-*====*-*====*-*")
             print("you win!")
+            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
             computerLives = computerLives - 1
 
     elif player == "scissors":
         if computer == "rock":
+            print("^-^====^-^====^-^====^-^====^-^====^-^")
             print("you lose!")
+            ("^-^====^-^====^-^====^-^====^-^====^-^")
             playerLives = playerLives - 1
         else:
+            print("*-*====*-*====*-*====*-*====*-*====*-*")
             print("you win!")
+            print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")
             computerLives = computerLives - 1
 
     print("player Lives: " + str(playerLives))
     print("computer Lives: " + str(computerLives))
 
     if playerLives == 0:
+        print("^-^====^-^====^-^====^-^====^-^====^-^")
         # call the winorlose function here
-        winlose.winorlose("lose")
+        winlose.winorlose("--------lose--------")
+        ("^-^====^-^====^-^====^-^====^-^====^-^")
         
     elif computerLives == 0:
+        print("*-*====*-*====*-*====*-*====*-*====*-*")
         # call the winorlose function here  
-        winlose.winorlose("won")   
+        winlose.winorlose("========won!========")
+        print("*-*==*-*==*-*==*-*==*-*==*-*==*-*")   
         
     player = False
