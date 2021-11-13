@@ -28,6 +28,8 @@ while player is False:
     print("player Lives: " + str(playerLives))
     print("computer Lives: " + str(computerLives))
 
+    #invoke the function here
+
     if playerLives == 0:
         print("^-^====^-^====^-^====^-^====^-^====^-^")
         # call the winorlose function here
